@@ -1,0 +1,180 @@
+/* Title Styling */
+.banner {
+	height: 450px;
+}
+
+.title {
+	text-align: center;
+	color: white;
+	width: 100%;
+	font-family: 'Major Mono Display', monospace;
+	margin: 0 0;
+}
+
+.title h1 {
+	font-size: 100px;
+	margin: 0 0;
+	color: black;
+	text-align: center;
+	text-shadow: rgb(240, 240, 240) 0 0 15px; 
+	position: relative;
+	top: 1.2em;
+  	clear: both;
+}
+
+
+
+
+/* Main Content Styling */
+.about {
+	font-family: 'Major Mono Display', monospace;
+	margin: 15px 15px;
+}
+
+.section {
+	width: 45%;
+	margin-left: 20px;
+	padding: 20px;
+	float: left;
+}
+
+.section img {
+	border: solid black 1px;
+	border-radius: 2em;
+	width: 100%;
+}
+
+.about p {
+	line-height: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 646px) {
+	.nav {
+		font-size: 18px;
+	}
+
+	.nav li {
+		width: 100%;
+	}
+
+	.nav li a:hover {
+	color: white;
+	text-shadow: black 1px 1px 3px;
+	font-size: 18px;
+	transition: .3s;
+	}
+
+	.title h1 {
+		font-size: 45px;
+		position: relative;
+		top: 3.4em;
+	}
+
+	.about {
+		width: auto; 
+	}
+
+	.section {
+		width: 90%;
+		margin: 0 0;
+	}
+
+	.section h1 {
+		font-size: 16px;
+	}
+
+	.section p {
+		font-size: 14px;
+	}
+
+	footer {
+		font-size: 11px;
+	}
+}
+
+
+/* iPad 3 ---------------------------- */
+@media only screen and (min-width: 647px) and (max-width: 924px) {
+	.nav {
+		font-size: 18px;
+	}
+
+	.nav li a:hover {
+	color: white;
+	text-shadow: black 1px 1px 3px;
+	font-size: 20px;
+	transition: .3s;
+	}
+
+	.title h1 {
+		font-size: 50px;
+		position: relative;
+		top: 3em;
+	}
+
+	.about {
+		width: auto;
+	}
+
+	.about h2 {
+		font-size: 18px;
+	}
+
+	.about p {
+		font-size: 12px;
+	}
+
+	.founder {
+		width: 40%;
+	}
+
+	.float {
+		float: right;
+		width: 40%;
+	}
+
+	footer {
+		font-size: 12px;
+	}
+}
+
+
+@media only screen and (min-width: 925px) and (max-width: 1125px) {
+	.nav {
+		font-size: 23px;
+		position: relative;
+		right: 20px;
+	}
+
+	.title h1 {
+		font-size: 70px;
+		position: relative;
+		top: 2em;
+	}
+
+	.about {
+		width: auto;
+	}
+
+	.about p {
+		font-size: 16px;
+	}
+
+	.float {
+		float: right;
+		width: 40%;
+		position: relative;
+		left: 10px;
+		margin: 0 0;
+	}
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vacation Sites</title>
+
+	<!-- Local Stylesheets -->
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="site_styles.css">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Major+Mono+Display|Monofett|Monoton|Space+Mono&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<div class='banner'>
+		<div class='nav'>
+			<ul>
+				<li><a href='about.html'>About Us</li></a>
+				<li><a href='join.html'>Sign Up</li></a>
+				<li><a href='index.html'>Home</a></li>
+			</ul>
+		</div>
+
+		<div class='title'>
+			<h1>Plan A Vacation</h1>
+		</div>
+	</div>
+
+
+
+	<div class='destinations'>
+		<div class='membership'>by joining <b>Vacation PlAnEts</b> exclusive membership, you too can travel the solar system.  luxury and travel meet in <b>Vacation PlAnEts</b> state of the art resorts and private housing.  check out some of our sites below, and remember...</div>
+		<div class='membership'><b>The Sky is No Longer the Limit.</b></div>
+
+		<div class='group'>
+			<div class='right'>
+				<div class='bottom site'>
+					<img onclick='joinNow()' src="media/planets/ceres.jpg">
+					<h2 onclick='joinNow()'>Ceres</h2>
+					<div>"No Alcohol, But Lots of Water..."</div>
+				</div>
+				<div class='bottom top site'>
+					<img onclick='joinNow()' src="media/planets/earth.jpg">
+					<h2 onclick='joinNow()'>Earth</h2>
+					<div>"Human Tested, Humanity Approved."</div>
+				</div>
+				<div class='top site'>
+					<img onclick='joinNow()' src="media/planets/europa.jpg">
+					<h2 onclick='joinNow()'>Europa</h2>
+					<div>"Best Water Park This Side of the Solar System."</div>
+				</div>
+			</div>
+		</div>
+
+		<div class='group'>
+			<div class='middle'>
+				<div class='bottom site'>
+					<img onclick='joinNow()' src="media/planets/jupiter.jpg">
+					<h2 onclick='joinNow()'>Jupiter</h2>
+					<div>"Great for any storm chaser."</div>
+				</div>
+				<div class='bottom top site'>
+					<img onclick='joinNow()' src="media/planets/mars.jpg">
+					<h2 onclick='joinNow()'>Mars</h2>
+					<div>"No place like Earth.  Wait..."</div>
+				</div>
+				<div class='top site'>
+					<img onclick='joinNow()' src="media/planets/venus.jpg">
+					<h2 onclick='joinNow()'>Venus</h2>
+					<div>"I don't think I've ever been to a better party."</div>
+				</div>
+			</div>		
+		</div>
+
+		<div class='group'>
+			<div class='left'>
+				<div class='bottom site'>
+					<img onclick='joinNow()' src="media/planets/titan.jpg">
+					<h2 onclick='joinNow()'>Titan</h2>
+					<div>"You could die...But that's what makes it fun."</div>
+				</div>
+				<div class='bottom top site'>
+					<img onclick='joinNow()' src="media/planets/kepler16b.jpg">
+					<h2 onclick='joinNow()'>Kepler16b</h2>
+					<div>"Best Tan I Ever Had."</div>
+				</div>
+				<div class='top site'>
+					<img onclick='joinNow()' src="media/planets/kepler186f.jpg">
+					<h2 onclick='joinNow()'>Kepler186f</h2>
+					<div>"If You Like Red, This is the Place For You."</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p>copyright&#169; Vacation PlAnEt 2019 - <b><a href='#'>(555) 555-5555</a></b></p>
+	</footer>
+
+	<script>
+		function joinNow() {
+			let answer = window.prompt('We see you are not yet a member of Vacation Planet.\nWould you like to sign up now? ("YES" or "NO")').toUpperCase();
+
+			if (answer === 'YES') {
+				window.location.href = 'join.html'
+			}
+		}
+	</script>
+
+</body>
+</html>

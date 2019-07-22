@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up!</title>
+
+	<!-- Local Stylesheets -->
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="join_styles.css">
+
+	<!-- Local Script Files -->
+	<script src="script.js" async></script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Major+Mono+Display|Monofett|Monoton|Space+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class='banner'>
+		<div class='nav'>
+			<ul>
+				<li><a href='about.html'>About Us</li></a>
+				<li><a href='site.html'>Locations</a></li>
+				<li><a href='index.html'>Home</li></a>
+			</ul>
+		</div>
+
+		<div class='title'>
+			<h1>Sign Up NOW!</h1>
+		</div>
+	</div>
+
+<!-- ============== START OF FORM ============== -->
+	<div class='formBox' align="center">
+		<div class='form' id='form'>
+			<p><b>Required</b> information will be marked by an asterisk (*)</p>
+			<legend><b>Client Information</b></legend>
+
+			<img id='pic' src="media/planets/atomic_clock_blue.jpg">
+				
+			<div class='formRow'>
+				<label id='firstLabel'><b>First Name*</b></label> 
+				<input type="text" name="firstName" id='firstName' placeholder="Billy" required/>
+			</div>
+
+			<div class='formRow'>
+				<label id='lastLabel'><b>Last Name*</b></label>
+				<input type="text" name="lastName" id='lastName' placeholder="Mitchell" required/>
+			</div>
+
+			<div class='formRow'>
+				<label>Street Address</label>
+				<input type="text" name="address" id='address'/>
+			</div>
+
+			<div class='formRow'>
+				<label>City</label> 
+				<input type="text" name="city" id='city'/>
+			</div>
+
+			<div class='formRow'>
+				<label>State</label> 
+				<input type="text" name="state" id='state'/>
+			</div>
+
+			<div class='formRow'>
+				<label>Postal Code</label> 
+				<input type="text" name="postCode" id='postCode'/>
+			</div>
+
+			<div class='formRow'>
+				<label>Country</label> 
+				<input type="text" name="country" id='country'/>
+			</div>
+
+			<div class='formRow'>
+				<label id='telLabel'><b>Phone Number*</b></label>
+				<input type="text" name="phone" id='phone' placeholder="(555) 555-5555" required/>
+			</div>
+
+			<div class='formRow'>
+				<label id='emailLabel'><b>E-mail*</b></label>
+				<input type="text" name="email" id='email' placeholder="example@email.com" required/>
+			</div>
+
+			<div>
+				<input type="checkbox" name="mailList"/>
+				<label>Add me to  your mailing list</label>
+			</div>
+
+			<h3 id='fill'></h3>
+			<div>
+				<p id='submit' onclick='submit()'>Submit!</p>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p>Copyright&#169; Vacation Planet 2019 - <b><a href='#'>(555) 555-5555</a></b></p>
+	</footer>
+
+</body>
+</html>

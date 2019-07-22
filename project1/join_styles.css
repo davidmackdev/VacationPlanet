@@ -1,0 +1,147 @@
+/* Stylesheet for the join.html page
+
+	This will include styling for the
+	form section of the page.
+*/
+
+.banner {
+	height: 450px;
+}
+
+.title {
+	text-align: center;
+	color: white;
+	width: 100%;
+	font-family: 'Major Mono Display', monospace;
+	margin: 0 0;
+}
+
+.title h1 {
+	font-size: 100px;
+	margin: 0 0;
+	color: black;
+	text-align: center;
+	text-shadow: rgb(240, 240, 240) 0 0 15px;
+	position: relative;
+	top: 1.2em;
+  	clear: both;
+}
+
+
+
+/* Form Styling */
+.formBox {
+
+}
+
+.form {
+	font-family: 'Space Mono', monospace;
+	width: 60%;
+	border: solid black 1px;
+	text-align: center;
+	margin-top: 2em;
+	box-shadow: lightblue -1px -1px 5px, black -2px -2px 5px;
+}
+
+.form p {
+	margin: 0 2em;
+}
+
+legend {
+	border-bottom: solid black 1px;
+}
+
+.formRow {
+	margin: 1em 2em;
+	text-align: left;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.formRow label {
+	margin-right: 2em;
+	width: 50%;
+}
+
+.formRow input {
+	width: 90%;
+}
+
+#pic {
+	float: right;
+	width: 40%; 
+	margin-top: 2em;
+	margin-right: 2em;
+	border: solid black 1px;
+	border-radius: 0.5em;
+}
+
+#submit {
+	border: solid black 1px;
+	width: 20%;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#submit:hover {
+	cursor: pointer;
+	color: white;
+	background-color: black;
+	transition: .2s;
+}
+
+#fill {
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 646px){
+	.form {
+		width: 90%;
+	}
+
+	img {
+		display: none;
+	}
+
+	#submit {
+		width: 40%;
+		font-size: 1em;
+	}
+
+	.title h1 {
+		font-size: 60px;
+		line-height: 1.3em;
+		position: relative;
+		top: 2em;
+	}
+
+	.form label, #fill {
+		font-size: .8em;
+	}
+}
+
+
+
+@media only screen and (min-width: 647px) and (max-width: 1125px) {
+	.form {
+		width: 80%;
+	}
+
+	.title h1 {
+		font-size: 70px;
+		line-height: 1.5em;
+		position: relative;
+		top: 2.2em;
+	}
+}

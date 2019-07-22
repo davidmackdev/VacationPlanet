@@ -1,0 +1,96 @@
+/* Navigation Styling */
+
+.nav li a {
+	text-align: right;
+}
+
+
+
+/* Heading Styling */
+
+.destinations h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 3.5em;
+	clear: both;
+	padding-top: 50px;
+}
+
+
+
+/* Main Content Styling */
+
+.group div {
+	text-shadow: black 0px 0px 0px;
+	padding: 15px;
+}
+
+footer {
+	position: relative;
+	top: 2em;
+}
+
+
+
+
+
+
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 646px){
+	.site {
+		margin: 0 2em;
+	}
+
+	.membership {
+		font-size: 1em;
+	}
+
+	.title h1 {
+		line-height: 1.5em;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 1125px){
+	.right, .bottom, .top, .middle, .destinations h1, .group, .group div {
+		text-align: center;
+		border: none;
+		padding: 0 0;
+		margin: 0 0;
+		width: auto;
+		height: auto;
+		clear: both;
+	}
+
+	.group {
+		clear: both;
+		width: 100%;
+	}
+
+	.bottom, .top {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.site {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.group img {
+		margin-top: 5em;
+	}
+
+	img {
+		border: solid black 1px;
+	}
+
+	footer {
+		margin-top: 1em;
+	}
+}
